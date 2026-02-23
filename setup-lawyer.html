@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أجندة | إعداد حساب المحامي </title>
+
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/forms.css">
+  <link rel="icon" href="assets/logo-192.png" type="image/png">
+</head>
+
+<body>
+
+<main class="main">
+
+  <div class="form-container">
+    <h2>إعداد حساب المحامي</h2>
+
+    <form id="lawyerForm">
+
+      <label>الاسم بالكامل</label>
+      <input type="text" id="name" required>
+
+      <label>رقم الموبايل</label>
+      <input type="text" id="phone" required>
+
+      <label>البريد الإلكتروني</label>
+      <input type="email" id="email" required>
+
+      <label>اسم المكتب</label>
+      <input type="text" id="officeName">
+
+      <label>عنوان المكتب</label>
+      <input type="text" id="officeAddress">
+
+      <label>المدينة</label>
+      <input type="text" id="city">
+
+      <label>التخصصات</label>
+
+      <div id="specialties">
+
+        <label><input type="checkbox" value="مدني"> مدني</label>
+        <label><input type="checkbox" value="جنائي"> جنائي</label>
+        <label><input type="checkbox" value="أسرة"> أسرة</label>
+        <label><input type="checkbox" value="إداري"> إداري</label>
+        <label><input type="checkbox" value="تجاري"> تجاري</label>
+        <label><input type="checkbox" value="شركات"> شركات</label>
+        <label><input type="checkbox" value="عمال"> عمال</label>
+        <label><input type="checkbox" value="ضرائب"> ضرائب</label>
+        <label><input type="checkbox" value="أحوال شخصية"> أحوال شخصية</label>
+        <label><input type="checkbox" value="تحكيم"> تحكيم</label>
+        <label><input type="checkbox" value="ملكية فكرية"> ملكية فكرية</label>
+
+      </div>
+
+      <label>رقم القيد بالنقابة</label>
+      <input type="text" id="licenseNumber">
+
+      <label>النقابة</label>
+      <input type="text" id="barAssociation">
+
+      <label>واتساب</label>
+      <input type="text" id="whatsapp">
+
+      <label>الموقع الإلكتروني</label>
+      <input type="text" id="website">
+
+      <button type="submit">حفظ البيانات</button>
+
+    </form>
+
+  </div>
+
+</main>
+
+<script type="module" src="js/setup-lawyer.js"></script>
+
+</body>
+</html>

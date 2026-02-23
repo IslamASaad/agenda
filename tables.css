@@ -1,0 +1,91 @@
+/* TABLE CONTAINER */
+
+.table-container {
+  background: var(--sidebar-bg);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* TABLE */
+
+.sessions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.sessions-table thead {
+  background: rgba(0,0,0,0.03);
+}
+
+.sessions-table th {
+  font-size: 13px;
+  text-align: start;
+  padding: 12px;
+  color: var(--text-color);
+}
+
+.sessions-table td {
+  padding: 12px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* HOVER */
+
+.sessions-table tbody tr:hover {
+  background: rgba(0,0,0,0.03);
+}
+
+/* ACTION BUTTONS */
+
+.action-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 15px;
+  margin-inline: 4px;
+}
+
+.action-btn.edit {
+  color: #1976d2;
+}
+
+.action-btn.delete {
+  color: #d32f2f;
+}
+
+/* ADD BUTTON */
+
+.add-main-btn {
+  border: none;
+  background: #2e7d32;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+/* ACTION COLUMN FIX */
+.sessions-table td:last-child,
+.sessions-table th:last-child {
+  min-width: 120px;
+  text-align: center;
+}
+.action-btn {
+  display: inline-block;
+}
+.sessions-table {
+  table-layout: auto !important;
+}
+.sessions-table td {
+  white-space: nowrap;
+}
+.case-row {
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.case-row:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
