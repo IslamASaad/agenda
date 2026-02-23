@@ -11,7 +11,7 @@ import { getStorage } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-s
 
 // Config
 const firebaseConfig = {
-  apiKey: "AIzaSyAAB0pHETaW1mymMsZ_GcCuoSB-BfiSZ-c",
+  apiKey: "سري",
   authDomain: "casehub-753d3.firebaseapp.com",
   projectId: "casehub-753d3",
   storageBucket: "casehub-753d3.firebasestorage.app",
@@ -26,4 +26,5 @@ const app = initializeApp(firebaseConfig);
 // Services
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
 export const storage = getStorage(app);
